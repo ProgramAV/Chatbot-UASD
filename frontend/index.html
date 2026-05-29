@@ -1,0 +1,92 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot UASD</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="chat-card">
+
+            <div class="chat-header">
+
+                <div class="logo-area">
+                    <div class="bot-icon">🤖</div>
+
+                    <div>
+                        <h1>Chatbot UASD</h1>
+                        <p>Asistente Inteligente del Estatuto Orgánico</p>
+                    </div>
+                </div>
+
+                <div class="status">
+                    ● En línea
+                </div>
+
+            </div>
+
+            <div id="chat" class="chat-body">
+
+                <div class="message bot-message">
+                    <div class="message-content">
+                        ¡Hola! Soy el asistente virtual de la UASD. Puedes hacerme preguntas sobre el Estatuto Orgánico.
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="suggestions">
+
+                <button onclick="usarPregunta(this)">
+                    ¿Cuál es la misión de la UASD?
+                </button>
+
+                <button onclick="usarPregunta(this)">
+                    ¿Qué es el Claustro Mayor?
+                </button>
+
+                <button onclick="usarPregunta(this)">
+                    ¿Cuáles son los derechos de los estudiantes?
+                </button>
+
+                <button onclick="usarPregunta(this)">
+                    ¿Qué es el Consejo Universitario?
+                </button>
+
+            </div>
+
+            <div class="chat-input-area">
+
+                <input
+                    type="text"
+                    id="mensaje"
+                    placeholder="Escribe tu pregunta aquí..."
+                    onkeypress="if(event.key === 'Enter') enviarMensaje()"
+                >
+
+                <button onclick="enviarMensaje()">
+                    Enviar
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
